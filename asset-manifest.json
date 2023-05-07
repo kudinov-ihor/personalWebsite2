@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kudinov-ihor/personalWebsite2.git/static/css/main.073c9b0a.css",
+    "main.js": "/kudinov-ihor/personalWebsite2.git/static/js/main.0a232bda.js",
+    "index.html": "/kudinov-ihor/personalWebsite2.git/index.html",
+    "main.073c9b0a.css.map": "/kudinov-ihor/personalWebsite2.git/static/css/main.073c9b0a.css.map",
+    "main.0a232bda.js.map": "/kudinov-ihor/personalWebsite2.git/static/js/main.0a232bda.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.0a232bda.js"
+  ]
+}
