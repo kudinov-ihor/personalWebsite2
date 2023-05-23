@@ -1,29 +1,27 @@
 import "./App.css";
-import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import { Drawer, Box, Typography } from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
+
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import Navbar from "./components/navbar/Navbar";
+
+
 function App() {
-  const [drawerOpen, setDrawerOpen] = useState(false);
+
 
   return (
     <Router>
-      <MenuIcon onClick={() => setDrawerOpen(true)}></MenuIcon>
-      <Drawer
-        anchor="left"
-        open={drawerOpen}
-        onClose={() => setDrawerOpen(false)}
-      >
-        <Box p={2} width="250px" textAlign="center" role="presentation">
-          <Link to="/">Main</Link>
-          <Link to="/about">About</Link>
-        </Box>
-      </Drawer>
+      <Navbar/>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Home />}>
+          
+        </Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/projects" element={<Projects/>}/>
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </Router>
   );
