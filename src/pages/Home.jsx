@@ -8,7 +8,8 @@ import {
   deleteDoc,
 } from "firebase/firestore";
 import { db } from "../firebase";
-const Home = () => {
+import {Stack, Box, Typography, Container} from '@mui/material';
+const Home = () => { 
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
@@ -23,7 +24,7 @@ const Home = () => {
     return () => unsub();
   }, []);
   return (
-    <div>
+    <Container>
       {todos.map((todo) => (
           <p
             key={todo.id}
@@ -31,7 +32,7 @@ const Home = () => {
             {todo.name}
           </p>
         ))}
-    </div>
+    </Container>
   )
 }
 
