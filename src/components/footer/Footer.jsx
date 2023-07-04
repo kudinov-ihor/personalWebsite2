@@ -8,18 +8,20 @@ const Footer = () => {
     <Container>
       <Stack
         sx={{
-          paddingBottom: "80px",
-          flexDirection: "row",
+          paddingBottom: {xs: '40px', lg: '80px'},
+          flexDirection: {xs: 'column', md: 'row'},
           justifyContent: 'space-between',
-          alignItems: 'center'
+          alignItems: 'center',
+          gap: {xs: '30px', lg: 0}
+          
         }}
       >
-        <Stack sx={{flexDirection: 'row', gap: '130px'}}>
-          <Typography color="#fff" sx={{fontSize: '32px'}}>
+        <Stack sx={{flexDirection: {xs: 'column', md: 'row'}, gap: '50px'}}>
+          <Typography color="#fff" sx={{fontSize: '16px'}}>
             Call me: <br />
             0982327807
           </Typography>
-          <Typography color="#fff" sx={{fontSize: '32px'}}>
+          <Typography color="#fff" sx={{fontSize: '16px'}}>
             Email: <br />
             kudinov.igor98@gmail.com
           </Typography>
